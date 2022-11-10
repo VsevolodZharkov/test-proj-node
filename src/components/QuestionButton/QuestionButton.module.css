@@ -1,0 +1,115 @@
+@media screen and (min-width: 270px) and (max-width: 767px) {
+  .item {
+    display: inline-block;
+    border: solid 1px;
+    margin: 50px 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .item {
+    display: inline-block;
+    border: solid 1px;
+    margin: 50px 20px;
+  }
+}
+@media screen and (min-width: 270px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 270px) {
+  .button {
+    background: var(--button-background);
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 92px;
+    padding-left: 51px;
+    padding-right: 52px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .button {
+    padding-top: 60px;
+    padding-bottom: 74px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .button:last-child {
+    margin-bottom: 125px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button {
+    background: var(--button-background);
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    padding-top: 60px;
+    padding-bottom: 74px;
+    padding-left: 85px;
+    padding-right: 70px;
+    margin-bottom: 133px;
+    width: 245px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 270px) {
+  .arrow {
+    position: absolute;
+    bottom: 45px;
+    right: 126px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .arrow {
+    position: absolute;
+    bottom: 45px;
+    right: 190px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .arrow {
+    position: absolute;
+    bottom: 45px;
+    right: 185px;
+  }
+}
+
+.button:hover {
+  background: var(--accent-button-background);
+}

@@ -1,0 +1,15 @@
+.root {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.root.appear-done {
+  opacity: 1;
+  transform: none;
+  transition: 600ms ease-in-out;
+}
+
+.root.exit-active {
+  opacity: 0;
+  transition: opacity 600ms;
+}

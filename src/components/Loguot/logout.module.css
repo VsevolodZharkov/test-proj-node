@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color var(--transition);
+  color: var(--main-text);
+}
+
+.button:hover {
+  color: var(--accent-color);
+}
+
+.button.border {
+  border-left: 1px solid #e2e3e5;
+
+  padding-top: 26px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 0;
+}

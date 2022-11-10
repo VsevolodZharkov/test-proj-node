@@ -1,0 +1,39 @@
+.header {
+  height: 70px;
+  background: var(--main-color);
+  box-shadow: inset 0px -1px 0px 0px rgba(226, 227, 229, 1);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  align-content: base-line;
+}
+
+.navigaton {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

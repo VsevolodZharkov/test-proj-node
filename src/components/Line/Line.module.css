@@ -1,0 +1,142 @@
+.lineContainer {
+  position: absolute;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+}
+
+.lineV {
+  position: absolute;
+  /* bottom: -70.6%; */
+  width: 1px;
+  /* height: 141%; */
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: top right;
+  transform: rotate(45deg);
+  animation: drawV 0.3s linear;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.lineV::before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  scale: 0;
+  background-color: rgb(255, 255, 255);
+  animation: point 0.3s linear;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .lineV::before {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+  }
+}
+
+.lineH {
+  position: absolute;
+  right: -100%;
+  top: -2px;
+  height: 1px;
+  background: rgb(0, 0, 0, 0.5);
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  transform-origin: 0 100%;
+  transform: rotate(180deg);
+  animation: drawH 0.3s linear;
+  animation-fill-mode: forwards;
+}
+/* .content::after {
+  content: '';
+  height: 2px;
+  width: 50%;
+  background: rgb(25, 123, 38);
+  position: absolute;
+  left: -50%;
+  rotate: 135deg;
+  right: 0;
+  -webkit-animation: dude 0.75s 1 forwards;
+  animation: dudeV 0.75s 1 forwards;
+} */
+/* .content .lineH {
+  height: 2px;
+  background: rgb(36, 17, 202);
+  position: absolute;
+  top: 10px;
+  right: 0;
+  -webkit-animation: dude 0.75s 1 forwards;
+  animation: dude 0.75s 1 forwards;
+}
+.content .lineV {
+  height: 2px;
+  width: 50%;
+  background: rgb(25, 123, 38);
+  position: absolute;
+  left: -50%;
+  rotate: 315deg;
+  right: 0;
+  -webkit-animation: dude 0.75s 1 forwards;
+  animation: dude 0.75s 1 forwards;
+} */
+/* @-webkit-keyframes dudeH {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+@keyframes point {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes drawH {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@keyframes drawV {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+/* @keyframes dudeH {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes dudeV {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+} */

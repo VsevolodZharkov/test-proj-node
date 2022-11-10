@@ -1,0 +1,90 @@
+.textStyle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+.container {
+  padding: 100px 0px 0px 123px;
+  min-height: calc(100vh - 223px);
+
+  background: url('../../svg/materials_images/materials_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.href {
+  text-decoration: underline;
+}
+
+.title {
+  width: 341px;
+
+  position: relative;
+  text-align: left;
+
+  composes: textStyle;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+.title::after {
+  content: '';
+  width: 341px;
+  height: 1px;
+  background: #d0d3db;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+
+.list {
+  max-width: 260px;
+  list-style: none;
+  margin: 24px 0px 32px 60px;
+  text-align: left;
+}
+.text {
+  composes: textStyle;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  color: var(--main-text);
+}
+.text:hover,
+.text:focus {
+  color: #ff6b09;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 102px 0px 30px 32px;
+    min-height: calc(100vh - 255px);
+
+    background-image: url('../../svg/materials_images/materials_768.jpg');
+    background-size: cover;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding: 42px 0px 55px 20px;
+
+    background-image: url('../../svg/materials_images/materials_320.jpg');
+  }
+  .title {
+    text-align: left;
+    composes: textStyle;
+    font-size: 18px;
+    line-height: 22px;
+    width: 129px;
+  }
+  .title::after {
+    width: 129px;
+    top: 52px;
+    left: 0px;
+  }
+  .list {
+    margin: 16px 0px 32px 0px;
+    text-align: left;
+  }
+}

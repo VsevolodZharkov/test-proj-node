@@ -1,0 +1,96 @@
+.authPage {
+  padding: 40px 0 34px 0;
+  background-color: #f5f6fb;
+
+  /* min-height: calc(100vh - 130px); */
+}
+
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  background-color: #f5f6fb;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blockInfo {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/*
+ * 768 - starting
+ */
+@media screen and (min-width: 768px) {
+  .authPage {
+    padding: 80px 0 70px;
+  }
+
+  .container {
+    width: 573px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 36px;
+  }
+}
+
+/*
+ * 1280 - starting
+ */
+@media screen and (min-width: 1280px) {
+  .authPage {
+    padding: 98px 0;
+  }
+
+  .container {
+    width: 1034px;
+    padding: 0;
+  }
+
+  .addFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blockInfo {
+    flex: 0 0 420px;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
