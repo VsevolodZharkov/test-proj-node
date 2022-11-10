@@ -20,7 +20,7 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/test-proj-node/" element={<Layout />}>
           <Route
             path="/auth"
             element={
